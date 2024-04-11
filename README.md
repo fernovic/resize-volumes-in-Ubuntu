@@ -13,3 +13,20 @@ you're working with LVM (Logical Volume Manager) to resize volumes in Ubuntu. Le
 3. `resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv`: This command is used to resize the filesystem on the specified logical volume (`/dev/mapper/ubuntu--vg-ubuntu--lv`). It adjusts the filesystem to occupy all available space after resizing the logical volume.
 
 Make sure to double-check the commands and ensure that you have backups in place before performing any resizing operations, as they can potentially result in data loss if not done correctly.
+
+# testing
+
+```bash
+df -h
+```
+
+The df -h command is used to display disk space usage in a human-readable format. Here's what each column in the output represents:
+
+    Filesystem: The device or filesystem name.
+    Size: Total size of the filesystem.
+    Used: Amount of space used on the filesystem.
+    Available: Available space on the filesystem.
+    Use%: Percentage of space used.
+    Mounted on: The directory where the filesystem is mounted.
+
+Running this command will provide you with a summary of disk space usage across all mounted filesystems on your system.
